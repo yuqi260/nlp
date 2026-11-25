@@ -1,0 +1,417 @@
+{
+  "protocol": "single_seat_1v8",
+  "system": "Ours_DualSystem_v2",
+  "target_seat": 8,
+  "target_role": "seer",
+  "game_idx": 4,
+  "seed": 20004,
+  "main_model": "qwen3.5-27b",
+  "opp_model": "qwen3.5-27b",
+  "side": "1v8_seer",
+  "elapsed_sec": 136.13,
+  "eval_won": false,
+  "target_survived": false,
+  "winner": "werewolf",
+  "win_reason": "all_gods_eliminated",
+  "total_days": 3,
+  "target_vote_total": 0,
+  "target_vote_ok": 0,
+  "target_guardrail": {
+    "passed": 1,
+    "retried": 0,
+    "fallback": 0
+  },
+  "parser_stats": {
+    "regex_hits": 8,
+    "llm_calls": 8,
+    "llm_fallbacks": 5
+  },
+  "usage_main": {
+    "calls": 3,
+    "retries": 0,
+    "failures": 0,
+    "prompt_tokens": 2753,
+    "completion_tokens": 194,
+    "total_tokens": 2947,
+    "total_latency_sec": 7.214,
+    "estimated_cost_rmb": 0.00258,
+    "model_names_seen": [
+      "qwen3.5-27b"
+    ]
+  },
+  "usage_opp": {
+    "calls": 49,
+    "retries": 0,
+    "failures": 0,
+    "prompt_tokens": 38543,
+    "completion_tokens": 2115,
+    "total_tokens": 40658,
+    "total_latency_sec": 128.892,
+    "estimated_cost_rmb": 0.03328,
+    "model_names_seen": [
+      "qwen3.5-27b"
+    ]
+  },
+  "seat_agents": {
+    "1": "Opp_qwen3.5-27b",
+    "2": "Opp_qwen3.5-27b",
+    "3": "Opp_qwen3.5-27b",
+    "4": "Opp_qwen3.5-27b",
+    "5": "Opp_qwen3.5-27b",
+    "6": "Opp_qwen3.5-27b",
+    "7": "Opp_qwen3.5-27b",
+    "8": "Ours_DualSystem_v2",
+    "9": "Opp_qwen3.5-27b"
+  },
+  "roles": {
+    "1": "villager",
+    "2": "werewolf",
+    "3": "hunter",
+    "4": "villager",
+    "5": "villager",
+    "6": "werewolf",
+    "7": "werewolf",
+    "8": "seer",
+    "9": "witch"
+  },
+  "death_causes": {
+    "3": "wolf_kill",
+    "4": "vote_exile",
+    "8": "vote_exile",
+    "9": "wolf_kill"
+  },
+  "public_events": [
+    {
+      "event_id": 1,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "night_announcement",
+      "actor": null,
+      "payload": {
+        "dead_players": [],
+        "text": "今天是平安夜"
+      }
+    },
+    {
+      "event_id": 2,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 1,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "1 号平民发言。首夜平安，女巫大概率用了药。目前无信息差，大家先听预言家起跳报查验。我暂时站边逻辑清晰、敢对跳的人，谁聊得虚我就怀疑谁，过。"
+      }
+    },
+    {
+      "event_id": 3,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 2,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "2 号好人视角。平安夜女巫大概率用了解药，预言家今晚必须起跳报查验。目前信息空白，我暂时不站边，会重点听后续发言逻辑。谁聊得虚、想带节奏我就怀疑谁，过。"
+      }
+    },
+    {
+      "event_id": 4,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 3,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "3 号好人视角。平安夜女巫大概率用解药，预言家今晚务必起跳报查验。我暂时不站边，重点听逻辑。谁聊得虚、想带节奏我就怀疑谁。过。"
+      }
+    },
+    {
+      "event_id": 5,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 4,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "4 号平民发言。平安夜女巫大概率用解药，预言家必须起跳报查验。前三位发言基本一致，我暂时不站边，重点听后续逻辑。谁聊得虚、想带节奏我就怀疑谁，过。"
+      }
+    },
+    {
+      "event_id": 6,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 5,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "5 号平民。平安夜女巫大概率用解药，预言家今晚必须起跳报查验。前四位发言高度雷同，像是有剧本，我暂时不站边，重点听后续逻辑。谁聊得虚、想带节奏我就怀疑谁，过。"
+      }
+    },
+    {
+      "event_id": 7,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 6,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "6 号好人视角。平安夜女巫大概率用解药，预言家必须起跳报查验。前五位发言过于雷同，像是有剧本在带节奏，我暂时不站边，重点听后续逻辑。谁聊得虚、想带节奏我就怀疑谁，过。"
+      }
+    },
+    {
+      "event_id": 8,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 7,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "7 号好人视角。平安夜女巫大概率用解药，预言家今晚必须起跳。前面六位发言高度雷同，像是有剧本在带节奏，我暂时不站边。重点听后续逻辑，谁聊得虚、想带节奏我就怀疑谁，过。"
+      }
+    },
+    {
+      "event_id": 9,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 8,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_seer_good",
+          "target": 1
+        },
+        "action_id": 19,
+        "text": "8 号预言家，首夜验 1 号金水。平安夜女巫大概率用解药。前七位发言高度雷同像剧本，我怀疑其中藏狼。今晚我验 2 号，若出查杀必死磕。好人请听我指挥，先保 1 号，票型集中打逻辑漏洞最大者。"
+      }
+    },
+    {
+      "event_id": 10,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 9,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_witch_save",
+          "target": 1
+        },
+        "action_id": 37,
+        "text": "9 号女巫，平安夜解药已用。8 号跳预言家报 1 号金水，我暂且认下，先保 1 号。但前七位发言高度雷同，狼队可能混在其中打配合。今天建议先出逻辑最虚的人，我会暗中观察，过。"
+      }
+    },
+    {
+      "event_id": 11,
+      "day": 1,
+      "phase": "day_vote",
+      "event_type": "vote_result",
+      "actor": null,
+      "payload": {
+        "vote_round": 1,
+        "votes": {
+          "1": null,
+          "2": 8,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": 8,
+          "7": null,
+          "8": null,
+          "9": null
+        },
+        "exiled": 8,
+        "tied": []
+      }
+    },
+    {
+      "event_id": 12,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "night_announcement",
+      "actor": null,
+      "payload": {
+        "dead_players": [
+          9
+        ],
+        "text": "昨晚死亡玩家：9号"
+      }
+    },
+    {
+      "event_id": 13,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 2,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "昨晚 9 号女巫倒牌，说明解药救的是她。8 号预言家报 1 号金水，我暂时认下。但前几位发言太像复制粘贴，狼队肯定混在中间。今天重点听谁敢跳出来说话，逻辑虚的优先出。"
+      }
+    },
+    {
+      "event_id": 14,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 3,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "3 号猎人视角。9 号女巫倒牌，8 号预言家金水暂认。但昨日 2 至 7 号发言高度雷同，必有狼踩点。我虽未跳神，但会紧盯逻辑漏洞者。今日建议先出跟风最严重的玩家，若有人悍跳预言家，我必开枪配合好人。"
+      }
+    },
+    {
+      "event_id": 15,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 4,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "4 号平民发言。9 号女巫倒牌，8 号预言家暂认。昨天 2 到 7 号发言高度雷同，像狼队打配合。我虽没神职，但会紧盯逻辑漏洞。今天建议优先出跟风最严重、不敢亮明底线的玩家，过。"
+      }
+    },
+    {
+      "event_id": 16,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 5,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "5 号平民。昨晚女巫倒牌，8 号预言家金水暂认。昨天 2 到 7 号发言高度雷同，狼队肯定混在其中打配合。今天重点听谁敢跳出来说话，逻辑虚的优先出。我站边 8 号，过。"
+      }
+    },
+    {
+      "event_id": 17,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 6,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "6 号好人视角。9 号女巫倒牌，8 号预言家暂认。昨日大家发言雷同确实可疑，但跟风不等于狼。我站边 8 号，建议今天重点盘查谁在刻意带节奏或逻辑断层，避免盲目冲票，过。"
+      }
+    },
+    {
+      "event_id": 18,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 7,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "7 号好人视角。昨晚女巫倒牌，8 号预言家暂认。昨天大家发言雷同确实像狼踩点，但跟风不等于狼。我站边 8 号，建议今天重点盘查谁在刻意带节奏或逻辑断层，避免盲目冲票，过。"
+      }
+    },
+    {
+      "event_id": 19,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 1,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "1 号平民。昨晚女巫倒牌，8 号预言家暂认。昨天大家发言雷同确实像狼踩点，但跟风不等于狼。我站边 8 号，建议今天重点盘查谁在刻意带节奏或逻辑断层，避免盲目冲票，过。"
+      }
+    },
+    {
+      "event_id": 20,
+      "day": 2,
+      "phase": "day_vote",
+      "event_type": "vote_result",
+      "actor": null,
+      "payload": {
+        "vote_round": 1,
+        "votes": {
+          "1": null,
+          "2": 4,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": 4,
+          "7": 3
+        },
+        "exiled": 4,
+        "tied": []
+      }
+    },
+    {
+      "event_id": 21,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "night_announcement",
+      "actor": null,
+      "payload": {
+        "dead_players": [
+          3
+        ],
+        "text": "昨晚死亡玩家：3号"
+      }
+    },
+    {
+      "event_id": 22,
+      "day": 3,
+      "phase": "game_over",
+      "event_type": "game_end",
+      "actor": null,
+      "payload": {
+        "winner": "werewolf",
+        "reason": "all_gods_eliminated"
+      }
+    }
+  ]
+}

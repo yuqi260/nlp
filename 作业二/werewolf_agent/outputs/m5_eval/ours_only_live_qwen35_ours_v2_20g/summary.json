@@ -1,0 +1,36 @@
+{
+  "systems": {
+    "Ours_BeliefBCRL": {
+      "games_as_good": 10,
+      "games_as_wolf": 10,
+      "good_win_rate": 0.1,
+      "wolf_win_rate": 0.4,
+      "combined_win_rate": 0.25,
+      "avg_days": 2.75,
+      "good_vote_wolf_acc": 0.5189,
+      "wolf_vote_good_acc": 0.931,
+      "witch_poison_wolf_acc": 0.5,
+      "hunter_shoot_wolf_acc": 0.5,
+      "guardrail_pass_rate": 0.9935,
+      "guardrail_retries": 0,
+      "guardrail_fallbacks": 1,
+      "parser_regex_hit_rate": 0.7994,
+      "total_tokens": 608861,
+      "estimated_cost_rmb": 0.5181,
+      "avg_cost_per_game_rmb": 0.0259
+    }
+  },
+  "grand_total_games": 20,
+  "grand_total_tokens": 608861,
+  "grand_total_cost_rmb": 0.5181,
+  "config": {
+    "suite": "ours_only",
+    "mode": "live",
+    "main_model": "qwen3.5-27b",
+    "opp_model": "qwen3.5-27b",
+    "games_per_side": 10,
+    "seed": 5000,
+    "elapsed_sec": 188.03,
+    "errors": []
+  }
+}

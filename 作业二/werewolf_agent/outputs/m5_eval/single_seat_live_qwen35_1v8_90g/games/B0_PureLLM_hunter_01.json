@@ -1,0 +1,557 @@
+{
+  "protocol": "single_seat_1v8",
+  "system": "B0_PureLLM",
+  "target_seat": 8,
+  "target_role": "hunter",
+  "game_idx": 1,
+  "seed": 9201,
+  "main_model": "qwen3.5-27b",
+  "opp_model": "qwen3.5-27b",
+  "side": "1v8_hunter",
+  "elapsed_sec": 131.92,
+  "eval_won": false,
+  "target_survived": false,
+  "winner": "werewolf",
+  "win_reason": "all_gods_eliminated",
+  "total_days": 4,
+  "target_vote_total": 1,
+  "target_vote_ok": 0,
+  "target_guardrail": {
+    "passed": 2,
+    "retried": 0,
+    "fallback": 0
+  },
+  "parser_stats": {
+    "regex_hits": 10,
+    "llm_calls": 13,
+    "llm_fallbacks": 3
+  },
+  "usage_main": {
+    "calls": 5,
+    "retries": 0,
+    "failures": 0,
+    "prompt_tokens": 4569,
+    "completion_tokens": 252,
+    "total_tokens": 4821,
+    "total_latency_sec": 11.983,
+    "estimated_cost_rmb": 0.00395,
+    "model_names_seen": [
+      "qwen3.5-27b"
+    ]
+  },
+  "usage_opp": {
+    "calls": 73,
+    "retries": 0,
+    "failures": 0,
+    "prompt_tokens": 56937,
+    "completion_tokens": 3084,
+    "total_tokens": 60021,
+    "total_latency_sec": 119.902,
+    "estimated_cost_rmb": 0.04897,
+    "model_names_seen": [
+      "qwen3.5-27b"
+    ]
+  },
+  "seat_agents": {
+    "1": "Opp_qwen3.5-27b",
+    "2": "Opp_qwen3.5-27b",
+    "3": "Opp_qwen3.5-27b",
+    "4": "Opp_qwen3.5-27b",
+    "5": "Opp_qwen3.5-27b",
+    "6": "Opp_qwen3.5-27b",
+    "7": "Opp_qwen3.5-27b",
+    "8": "B0_PureLLM",
+    "9": "Opp_qwen3.5-27b"
+  },
+  "roles": {
+    "1": "villager",
+    "2": "villager",
+    "3": "witch",
+    "4": "seer",
+    "5": "werewolf",
+    "6": "villager",
+    "7": "werewolf",
+    "8": "hunter",
+    "9": "werewolf"
+  },
+  "death_causes": {
+    "1": "vote_exile",
+    "2": "vote_exile",
+    "3": "wolf_kill",
+    "4": "wolf_kill",
+    "8": "wolf_kill"
+  },
+  "public_events": [
+    {
+      "event_id": 1,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "night_announcement",
+      "actor": null,
+      "payload": {
+        "dead_players": [],
+        "text": "今天是平安夜"
+      }
+    },
+    {
+      "event_id": 2,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 1,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是 1 号平民，首夜平安说明女巫大概率用了药。目前信息太少，建议大家多听发言找逻辑漏洞。我暂时没重点怀疑对象，先过，看后续谁跳预言家或神职再跟票。"
+      }
+    },
+    {
+      "event_id": 3,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 2,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_defend",
+          "target": 1
+        },
+        "action_id": 10,
+        "text": "2 号平民，首夜平安女巫大概率用了药。1 号发言逻辑正常，我暂且信他。目前信息太少，大家多听发言找漏洞，谁跳预言家我会重点分析，先过。"
+      }
+    },
+    {
+      "event_id": 4,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 3,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是 3 号女巫，首夜解药已用救回一人，所以是平安夜。毒药还在手，今晚若有人悍跳或倒钩我会直接毒杀。目前信息不足，先听预言家查验，暂不站边，过。"
+      }
+    },
+    {
+      "event_id": 5,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 4,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_seer_good",
+          "target": 3
+        },
+        "action_id": 21,
+        "text": "我是 4 号预言家，首夜查验 3 号为好人。3 号刚才跳女巫且逻辑自洽，与我查验结果吻合，可信度极高。今天大家重点听我发言，若有人悍跳请报出昨晚验人信息对质，否则直接出局。"
+      }
+    },
+    {
+      "event_id": 6,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 5,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_defend",
+          "target": 4
+        },
+        "action_id": 13,
+        "text": "我是 5 号平民，首夜平安女巫大概率用了药。3 号跳女巫逻辑清晰，4 号查杀 3 号好人，两人身份暂时可信。目前信息有限，我暂不站边，先听后续发言找漏洞，过。"
+      }
+    },
+    {
+      "event_id": 7,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 6,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_defend",
+          "target": 4
+        },
+        "action_id": 13,
+        "text": "6 号平民。首夜平安，3 号女巫用药合理，4 号预言家查杀 3 号好人，逻辑自洽且与 3 号身份吻合。目前我暂认 3、4 为真神职。后续若有悍跳请报验人信息对质，若无则跟票出狼，过。"
+      }
+    },
+    {
+      "event_id": 8,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 7,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_defend",
+          "target": 4
+        },
+        "action_id": 13,
+        "text": "7 号平民，平安夜女巫用药合理。3 号跳女巫、4 号查杀 3 号好人，逻辑闭环暂时可信。我暂认 3、4 为真神职，后续若有悍跳请报验人信息对质，目前无重点怀疑对象，先过。"
+      }
+    },
+    {
+      "event_id": 9,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 8,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "8 号猎人，首夜平安。3 号女巫、4 号预言家逻辑自洽且相互印证，我暂时认下两位神职。作为猎人，我会跟紧真预言家节奏，若有人悍跳或倒钩，我随时开枪自爆带人，今天先过。"
+      }
+    },
+    {
+      "event_id": 10,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 9,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "9 号平民，平安夜女巫用药合理。3 号女巫、4 号预言家逻辑自洽且相互印证，我暂认两位神职。目前信息有限，无重点怀疑对象，跟紧真预言家节奏，先过。"
+      }
+    },
+    {
+      "event_id": 11,
+      "day": 1,
+      "phase": "day_vote",
+      "event_type": "vote_result",
+      "actor": null,
+      "payload": {
+        "vote_round": 1,
+        "votes": {
+          "1": null,
+          "2": null,
+          "3": null,
+          "4": null,
+          "5": null,
+          "6": null,
+          "7": null,
+          "8": null,
+          "9": null
+        },
+        "exiled": null,
+        "tied": []
+      }
+    },
+    {
+      "event_id": 12,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "night_announcement",
+      "actor": null,
+      "payload": {
+        "dead_players": [
+          4
+        ],
+        "text": "昨晚死亡玩家：4号"
+      }
+    },
+    {
+      "event_id": 13,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 2,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "2 号平民。昨晚 4 号预言家被刀，说明狼队想冲神职。3 号女巫救药已用，逻辑闭环。我全程听发言，暂认 3、4 为真神。今天大家重点盘 1、5、6、7、9 中谁有狼面，我先过。"
+      }
+    },
+    {
+      "event_id": 14,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 3,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "3 号女巫，解药已用救回好人。昨晚 4 号预言家被刀，狼队冲神职意图明显。我手中毒药还在，今晚若有人悍跳或倒钩必毒。目前暂认 2、5、6、7、8、9 为好人，请继续盘逻辑找狼。"
+      }
+    },
+    {
+      "event_id": 15,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 5,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 1
+        },
+        "action_id": 1,
+        "text": "5 号平民。昨晚 4 号预言家被刀，狼队冲神职意图明显。3 号女巫解药已用逻辑自洽，我暂认两位真神。目前信息不足，建议重点盘 1 号和 2 号的发言漏洞，先过。"
+      }
+    },
+    {
+      "event_id": 16,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 6,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 1
+        },
+        "action_id": 1,
+        "text": "6 号平民。昨晚 4 号预言家被刀，狼队冲神职意图明显。3 号女巫解药已用逻辑自洽，我暂认两位真神。目前信息不足，建议重点盘 1 号和 2 号的发言漏洞，先过。"
+      }
+    },
+    {
+      "event_id": 17,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 7,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 1
+        },
+        "action_id": 1,
+        "text": "7 号平民。昨晚 4 号预言家被刀，狼队冲神职意图明显。3 号女巫解药已用逻辑自洽，我暂认两位真神。目前信息不足，建议重点盘 1 号和 2 号的发言漏洞，先过。"
+      }
+    },
+    {
+      "event_id": 18,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 8,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_hunter_pressure",
+          "target": 1
+        },
+        "action_id": 55,
+        "text": "8 号猎人，昨晚 4 号预言家倒牌，狼队冲神职意图明显。我认下 3 号女巫和 4 号真预。目前 1 号全程未发言，嫌疑最大，建议今天优先盘查 1 号，若其无法表水则直接出票。"
+      }
+    },
+    {
+      "event_id": 19,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 9,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 1
+        },
+        "action_id": 1,
+        "text": "9 号平民，昨晚 4 号预言家倒牌，狼队冲神职意图明显。我认下 3 号女巫和 4 号真预。8 号猎人建议盘查 1 号很合理，1 号全程未发言确实可疑，今天先出 1 号，过。"
+      }
+    },
+    {
+      "event_id": 20,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 1,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_defend",
+          "target": 3
+        },
+        "action_id": 12,
+        "text": "1 号平民。昨晚平安夜后我未发言是怕被误伤，并非心虚。大家集体冲我，反而让我觉得像狼队做身份。我认 3 号女巫和 4 号预言家，请好人别盲投，多盘逻辑再决定出谁。"
+      }
+    },
+    {
+      "event_id": 21,
+      "day": 2,
+      "phase": "day_vote",
+      "event_type": "vote_result",
+      "actor": null,
+      "payload": {
+        "vote_round": 1,
+        "votes": {
+          "1": null,
+          "2": 1,
+          "3": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1
+        },
+        "exiled": 1,
+        "tied": []
+      }
+    },
+    {
+      "event_id": 22,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "night_announcement",
+      "actor": null,
+      "payload": {
+        "dead_players": [
+          8
+        ],
+        "text": "昨晚死亡玩家：8号"
+      }
+    },
+    {
+      "event_id": 23,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 3,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "3 号女巫，解药已用救回好人。昨晚 8 号猎人倒牌，狼队继续冲神职。我手中毒药在手，今晚若有人悍跳或倒钩必毒。目前暂认 2、5、6、7、9 为好人，请继续盘逻辑找狼，过。"
+      }
+    },
+    {
+      "event_id": 24,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 5,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_defend",
+          "target": 3
+        },
+        "action_id": 12,
+        "text": "5 号平民。昨晚 8 号猎人倒牌，狼队仍在冲神职。我认 3 号女巫真身份，她逻辑清晰且毒药在手。目前场上信息不足，建议重点盘查 2 号和 6 号的发言状态，看谁在划水或做高身份，我先过。"
+      }
+    },
+    {
+      "event_id": 25,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 6,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 2
+        },
+        "action_id": 2,
+        "text": "6 号平民。昨晚猎人倒牌，狼队仍在冲神职。我认 3 号女巫真身份，她逻辑清晰且毒药在手。5 号建议盘查我和 2 号，但我全程发言正常无划水，请好人别盲投，继续深挖 2 号漏洞，过。"
+      }
+    },
+    {
+      "event_id": 26,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 7,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_defend",
+          "target": 6
+        },
+        "action_id": 15,
+        "text": "7 号平民。昨晚猎人倒牌，狼队依旧冲神职。我认 3 号女巫真身份，毒药在手很稳。5、6 号发言正常暂认好人。目前焦点在 2 号，他全程划水且无实质逻辑，建议今天重点盘查 2 号，若无法表水直接出票，过。"
+      }
+    },
+    {
+      "event_id": 27,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 9,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 2
+        },
+        "action_id": 2,
+        "text": "9 号平民。昨晚猎人倒牌，狼队冲神职意图明显。我认下 3 号女巫真身份。5、6、7 号发言正常暂认好人。2 号全程划水无逻辑，嫌疑最大，建议今天直接出 2 号，过。"
+      }
+    },
+    {
+      "event_id": 28,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 2,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "2 号平民，昨晚猎人倒牌我确实心急。5、6、7、9 号都在盘我划水，但我只是没找到切入点。现在全票冲我，反而像狼队做高身份抗推好人。请女巫今晚毒查杀，别盲投我，过。"
+      }
+    },
+    {
+      "event_id": 29,
+      "day": 3,
+      "phase": "day_vote",
+      "event_type": "vote_result",
+      "actor": null,
+      "payload": {
+        "vote_round": 1,
+        "votes": {
+          "2": null,
+          "3": 2,
+          "5": 2,
+          "6": 2,
+          "7": 2,
+          "9": 2
+        },
+        "exiled": 2,
+        "tied": []
+      }
+    },
+    {
+      "event_id": 30,
+      "day": 4,
+      "phase": "day_speech",
+      "event_type": "night_announcement",
+      "actor": null,
+      "payload": {
+        "dead_players": [
+          3
+        ],
+        "text": "昨晚死亡玩家：3号"
+      }
+    },
+    {
+      "event_id": 31,
+      "day": 4,
+      "phase": "game_over",
+      "event_type": "game_end",
+      "actor": null,
+      "payload": {
+        "winner": "werewolf",
+        "reason": "all_gods_eliminated"
+      }
+    }
+  ]
+}

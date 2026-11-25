@@ -1,0 +1,22 @@
+{
+  "ruleset_id": "nine_seer_witch_hunter_v0",
+  "status": "provisional_pending_dataset_audit",
+  "player_count": 9,
+  "role_counts": {
+    "seer": 1,
+    "witch": 1,
+    "hunter": 1,
+    "werewolf": 3,
+    "villager": 3
+  },
+  "role_names_zh": {
+    "seer": "预言家",
+    "witch": "女巫",
+    "hunter": "猎人",
+    "werewolf": "狼人",
+    "villager": "平民"
+  },
+  "viewpoint": "public_observer",
+  "snapshot": "after_day_vote_and_public_resolution_before_next_night",
+  "reveal_rules": "pending_dataset_audit"
+}

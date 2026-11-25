@@ -1,0 +1,36 @@
+{
+  "systems": {
+    "Ours_DualSystem": {
+      "games_as_good": 10,
+      "games_as_wolf": 10,
+      "good_win_rate": 0.2,
+      "wolf_win_rate": 0.8,
+      "combined_win_rate": 0.5,
+      "avg_days": 3.1,
+      "good_vote_wolf_acc": 0.6033,
+      "wolf_vote_good_acc": 0.9452,
+      "witch_poison_wolf_acc": 0.2,
+      "hunter_shoot_wolf_acc": 0.4,
+      "guardrail_pass_rate": 1.0,
+      "guardrail_retries": 0,
+      "guardrail_fallbacks": 0,
+      "parser_regex_hit_rate": 0.6836,
+      "total_tokens": 1131651,
+      "estimated_cost_rmb": 0.9334,
+      "avg_cost_per_game_rmb": 0.0467
+    }
+  },
+  "grand_total_games": 20,
+  "grand_total_tokens": 1131651,
+  "grand_total_cost_rmb": 0.9334,
+  "config": {
+    "suite": "dual_only",
+    "mode": "live",
+    "main_model": "qwen3.5-27b",
+    "opp_model": "qwen3.5-27b",
+    "games_per_side": 10,
+    "seed": 5000,
+    "elapsed_sec": 334.96,
+    "errors": []
+  }
+}

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="500" viewBox="0 0 960 500"><rect width="100%" height="100%" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei', 'PingFang SC', 'Segoe UI', Arial, sans-serif;fill:#1a1a1a;}.spine{stroke:#2B2B2B;stroke-width:1.15;fill:none;}.tick{stroke:#2B2B2B;stroke-width:1.0;}.refline{stroke:#6E737B;stroke-width:1.15;stroke-dasharray:5.5 4;}.panel-lbl{font-size:15px;font-weight:700;}.panel-ttl{font-size:14.5px;font-weight:400;}.ax-lbl{font-size:13px;}.tk-lbl{font-size:12px;}.leg-lbl{font-size:12px;}.val{font-size:10.5px;font-weight:400;}.val-b{font-size:10.5px;font-weight:700;}</style><defs><marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#0B4F9C"/></marker><marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#0d9488"/></marker><marker id="arr-slate" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#475569"/></marker><marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#B85324"/></marker></defs>
+<text x="480.0" y="28" text-anchor="middle" style="font-size:17px;font-weight:700">语言与决策解耦的双系统狼人杀智能体总体架构</text>
+<text x="480.0" y="47" text-anchor="middle" style="font-size:11.5px;fill:#475569">上方：离线符号环境零 API 成本快速训练环（本地 CPU） ｜ 下方：在线真实中文双系统推理环（冻结大模型零微调）</text>
+<rect x="20" y="62" width="920" height="176" rx="8" fill="#f8fafc" stroke="#4A81BF" stroke-width="1.4" stroke-dasharray="6 4"/>
+<rect x="32" y="70" width="335" height="22" rx="4" fill="#E4EEF8"/>
+<text x="42" y="85" style="font-size:11.5px;font-weight:700;fill:#0B4F9C">① 离线训练态：符号环境高速自博弈（本地 CPU，0 API 费）</text>
+<rect x="34" y="104" width="178" height="88" rx="6" fill="#f4f8fc" stroke="#4A81BF" stroke-width="1.5"/>
+<text x="123.0" y="125" text-anchor="middle" style="font-size:12px;font-weight:700;fill:#0B4F9C">MaKTO 人类轨迹重构</text>
+<text x="123.0" y="143" text-anchor="middle" style="font-size:10.5px;fill:#334155">133 局整局防泄漏划分</text>
+<text x="123.0" y="158" text-anchor="middle" style="font-size:10.5px;fill:#334155">1,552 信念快照 / 4,261 步</text>
+<text x="123.0" y="173" text-anchor="middle" style="font-size:10.5px;fill:#334155">91 维席位共享特征编码</text>
+<rect x="246" y="104" width="186" height="88" rx="6" fill="#f4f8fc" stroke="#0B4F9C" stroke-width="1.5"/>
+<text x="339.0" y="125" text-anchor="middle" style="font-size:12px;font-weight:700;fill:#0B4F9C">席位共享 BeliefMLP</text>
+<text x="339.0" y="143" text-anchor="middle" style="font-size:10.5px;fill:#334155">91 → 128 → 64 → 5</text>
+<text x="339.0" y="158" text-anchor="middle" style="font-size:10.5px;fill:#334155">座位排列等变 + 已知硬约束</text>
+<text x="339.0" y="173" text-anchor="middle" style="font-size:10.5px;fill:#334155">历史 NL 回放跨领域微调</text>
+<rect x="466" y="104" width="214" height="88" rx="6" fill="#edf3fa" stroke="#0B4F9C" stroke-width="1.5"/>
+<text x="573.0" y="125" text-anchor="middle" style="font-size:12px;font-weight:700;fill:#0B4F9C">席位等变指针策略-价值网络</text>
+<text x="573.0" y="143" text-anchor="middle" style="font-size:10.5px;fill:#334155">106 维实体 → 共享指针打分头</text>
+<text x="573.0" y="158" text-anchor="middle" style="font-size:10.5px;fill:#334155">BC 冷启动（模仿人类分布）</text>
+<text x="573.0" y="173" text-anchor="middle" style="font-size:10.5px;fill:#334155">4,800 局 Masked PPO + RAE + KL</text>
+<rect x="714" y="104" width="212" height="88" rx="6" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+<text x="820.0" y="125" text-anchor="middle" style="font-size:12px;font-weight:700;fill:#1e293b">Symbolic Mode 状态机引擎</text>
+<text x="820.0" y="143" text-anchor="middle" style="font-size:10.5px;fill:#334155">九人预女猎屠边 · 严格视角隔离</text>
+<text x="820.0" y="158" text-anchor="middle" style="font-size:10.5px;fill:#334155">357–637 局/秒 · 种群对手池</text>
+<text x="820.0" y="173" text-anchor="middle" style="font-size:10.5px;fill:#334155">6 类合法动作掩码（含 64 维意图）</text>
+<line x1="212" y1="148" x2="244" y2="148" stroke="#0B4F9C" stroke-width="1.6" marker-end="url(#arr-blue)"/>
+<line x1="432" y1="148" x2="464" y2="148" stroke="#0B4F9C" stroke-width="1.6" marker-end="url(#arr-blue)"/>
+<line x1="680" y1="136" x2="712" y2="136" stroke="#0B4F9C" stroke-width="1.6" marker-end="url(#arr-blue)"/>
+<line x1="712" y1="162" x2="680" y2="162" stroke="#B85324" stroke-width="1.6" marker-end="url(#arr-amber)"/>
+<text x="696" y="130" text-anchor="middle" style="font-size:9.5px;fill:#0B4F9C">动作</text>
+<text x="696" y="176" text-anchor="middle" style="font-size:9.5px;fill:#B85324">回报</text>
+<line x1="339" y1="192" x2="339" y2="303" stroke="#4A81BF" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#arr-blue)"/>
+<line x1="573" y1="192" x2="573" y2="303" stroke="#0B4F9C" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#arr-blue)"/>
+<rect x="195" y="211" width="570" height="20" rx="4" fill="#f8fafc"/>
+<text x="480" y="225" text-anchor="middle" style="font-size:10.5px;fill:#475569">权重离线冻结并导出：BeliefMLP_NL（约 2 万参数）与 SeatEquivariantPolicyValueNet（约 3.2 万参数）</text>
+<rect x="275" y="242" width="128" height="18" rx="3" fill="#ffffff" stroke="#4A81BF"/>
+<text x="339" y="255" text-anchor="middle" style="font-size:9.5px;font-weight:600;fill:#0B4F9C">加载 BeliefMLP_NL</text>
+<rect x="502" y="242" width="142" height="18" rx="3" fill="#ffffff" stroke="#0B4F9C"/>
+<text x="573" y="255" text-anchor="middle" style="font-size:9.5px;font-weight:600;fill:#0B4F9C">加载 Pointer RL 权重</text>
+<rect x="20" y="270" width="920" height="214" rx="8" fill="#fdfaf6" stroke="#D98A4E" stroke-width="1.4" stroke-dasharray="6 4"/>
+<rect x="32" y="278" width="380" height="22" rx="4" fill="#f6e7d8"/>
+<text x="42" y="293" style="font-size:11.5px;font-weight:700;fill:#7F3310">② 在线推理态：中文自然语言双系统融合（冻结 qwen3.5-27b）</text>
+<rect x="34" y="310" width="178" height="86" rx="6" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+<text x="123.0" y="331" text-anchor="middle" style="font-size:12px;font-weight:700;fill:#334155">NL Mode 公开对话流</text>
+<text x="123.0" y="349" text-anchor="middle" style="font-size:10.5px;fill:#334155">第一人称观测隔离</text>
+<text x="123.0" y="364" text-anchor="middle" style="font-size:10.5px;fill:#334155">精简上下文（8 条近期发言）</text>
+<text x="123.0" y="379" text-anchor="middle" style="font-size:10.5px;fill:#334155">混合解析：正则快路径+LLM</text>
+<rect x="246" y="306" width="186" height="94" rx="6" fill="#f4f8fc" stroke="#4A81BF" stroke-width="1.5"/>
+<text x="339.0" y="327" text-anchor="middle" style="font-size:12px;font-weight:700;fill:#0B4F9C">System-2 信念与事实核验</text>
+<text x="339.0" y="345" text-anchor="middle" style="font-size:10.5px;fill:#334155">BeliefMLP_NL 校准狼概率</text>
+<text x="339.0" y="360" text-anchor="middle" style="font-size:10.5px;fill:#334155">fact_tracker 客观查验账本</text>
+<text x="339.0" y="375" text-anchor="middle" style="font-size:10.5px;fill:#334155">反证逻辑铁狼 / 防误读金水</text>
+<rect x="466" y="306" width="214" height="94" rx="6" fill="#edf3fa" stroke="#0B4F9C" stroke-width="1.5"/>
+<text x="573.0" y="327" text-anchor="middle" style="font-size:12px;font-weight:700;fill:#0B4F9C">System-1 冻结 LLM + 重排</text>
+<text x="573.0" y="345" text-anchor="middle" style="font-size:10.5px;fill:#334155">结合原文+事实表提议 Top-2</text>
+<text x="573.0" y="360" text-anchor="middle" style="font-size:10.5px;fill:#334155">Pointer RL 对数概率融合重排</text>
+<text x="573.0" y="375" text-anchor="middle" style="font-size:10.5px;fill:#334155">铁狼强护栏 + 狼人低权放行</text>
+<rect x="714" y="310" width="212" height="86" rx="6" fill="#fdf4ef" stroke="#B85324" stroke-width="1.5"/>
+<text x="820.0" y="331" text-anchor="middle" style="font-size:12px;font-weight:700;fill:#7F3310">Guardrail 护栏与动作执行</text>
+<text x="820.0" y="349" text-anchor="middle" style="font-size:10.5px;fill:#334155">反泄密（禁爆狼/队友）</text>
+<text x="820.0" y="364" text-anchor="middle" style="font-size:10.5px;fill:#334155">反幻觉（禁编造终局）</text>
+<text x="820.0" y="379" text-anchor="middle" style="font-size:10.5px;fill:#334155">写回状态机驱动下一轮</text>
+<line x1="212" y1="353" x2="244" y2="353" stroke="#475569" stroke-width="1.6" marker-end="url(#arr-slate)"/>
+<line x1="432" y1="353" x2="464" y2="353" stroke="#0B4F9C" stroke-width="1.6" marker-end="url(#arr-blue)"/>
+<line x1="680" y1="353" x2="712" y2="353" stroke="#B85324" stroke-width="1.6" marker-end="url(#arr-amber)"/>
+<path d="M 820 396 L 820 456 L 123 456 L 123 398" fill="none" stroke="#B85324" stroke-width="1.6" marker-end="url(#arr-amber)"/>
+<rect x="330" y="445" width="300" height="20" rx="4" fill="#fdfaf6" stroke="#D98A4E"/>
+<text x="480" y="459" text-anchor="middle" style="font-size:10.5px;font-weight:600;fill:#7F3310">公开发言 / 夜间技能 / 放逐投票 回写统一状态机</text></svg>

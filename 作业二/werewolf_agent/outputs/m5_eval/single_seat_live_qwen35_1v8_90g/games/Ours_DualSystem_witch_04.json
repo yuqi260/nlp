@@ -1,0 +1,512 @@
+{
+  "protocol": "single_seat_1v8",
+  "system": "Ours_DualSystem",
+  "target_seat": 2,
+  "target_role": "witch",
+  "game_idx": 4,
+  "seed": 9104,
+  "main_model": "qwen3.5-27b",
+  "opp_model": "qwen3.5-27b",
+  "side": "1v8_witch",
+  "elapsed_sec": 149.93,
+  "eval_won": false,
+  "target_survived": false,
+  "winner": "werewolf",
+  "win_reason": "all_villagers_eliminated",
+  "total_days": 3,
+  "target_vote_total": 1,
+  "target_vote_ok": 0,
+  "target_guardrail": {
+    "passed": 1,
+    "retried": 0,
+    "fallback": 0
+  },
+  "parser_stats": {
+    "regex_hits": 7,
+    "llm_calls": 14,
+    "llm_fallbacks": 1
+  },
+  "usage_main": {
+    "calls": 3,
+    "retries": 0,
+    "failures": 0,
+    "prompt_tokens": 2408,
+    "completion_tokens": 176,
+    "total_tokens": 2584,
+    "total_latency_sec": 4.631,
+    "estimated_cost_rmb": 0.00229,
+    "model_names_seen": [
+      "qwen3.5-27b"
+    ]
+  },
+  "usage_opp": {
+    "calls": 65,
+    "retries": 0,
+    "failures": 0,
+    "prompt_tokens": 52861,
+    "completion_tokens": 2982,
+    "total_tokens": 55843,
+    "total_latency_sec": 145.273,
+    "estimated_cost_rmb": 0.04603,
+    "model_names_seen": [
+      "qwen3.5-27b"
+    ]
+  },
+  "seat_agents": {
+    "1": "Opp_qwen3.5-27b",
+    "2": "Ours_DualSystem",
+    "3": "Opp_qwen3.5-27b",
+    "4": "Opp_qwen3.5-27b",
+    "5": "Opp_qwen3.5-27b",
+    "6": "Opp_qwen3.5-27b",
+    "7": "Opp_qwen3.5-27b",
+    "8": "Opp_qwen3.5-27b",
+    "9": "Opp_qwen3.5-27b"
+  },
+  "roles": {
+    "1": "villager",
+    "2": "witch",
+    "3": "hunter",
+    "4": "werewolf",
+    "5": "werewolf",
+    "6": "werewolf",
+    "7": "villager",
+    "8": "seer",
+    "9": "villager"
+  },
+  "death_causes": {
+    "1": "vote_exile",
+    "2": "vote_exile",
+    "7": "wolf_kill",
+    "8": "wolf_kill",
+    "9": "vote_exile"
+  },
+  "public_events": [
+    {
+      "event_id": 1,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "night_announcement",
+      "actor": null,
+      "payload": {
+        "dead_players": [],
+        "text": "今天是平安夜"
+      }
+    },
+    {
+      "event_id": 2,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 1,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是 1 号平民，今天平安夜说明女巫大概率用了救药。作为好人我暂时没太多信息，建议大家多听发言找逻辑漏洞。目前先不站边，我会认真分析每个人的发言再决定投谁。"
+      }
+    },
+    {
+      "event_id": 3,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 2,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是 2 号，今天平安夜说明女巫大概率用了救药。作为好人我暂时没太多信息，建议大家多听发言找逻辑漏洞。目前先不站边，我会认真分析每个人的发言再决定投谁。"
+      }
+    },
+    {
+      "event_id": 4,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 3,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是 3 号猎人，首夜平安说明女巫大概率用了救药。1、2 号发言几乎一致，有复制粘贴嫌疑，我会重点听他们后续逻辑。目前我站边好人阵营，请预言家尽快跳出来带队，大家多找漏洞。"
+      }
+    },
+    {
+      "event_id": 5,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 4,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是 4 号平民。平安夜女巫大概率用了药。1、2 号发言高度雷同，确实像复制粘贴，值得警惕。3 号跳猎人，先保留态度。目前信息不足，建议好人多听后续发言找漏洞，我会谨慎站边。"
+      }
+    },
+    {
+      "event_id": 6,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 5,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是 5 号平民。平安夜女巫大概率用了救药。1、2 号发言高度雷同，确实像复制粘贴，值得警惕。3 号跳猎人先保留态度。目前信息不足，建议好人多听后续发言找漏洞，我会谨慎站边。"
+      }
+    },
+    {
+      "event_id": 7,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 6,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 1
+        },
+        "action_id": 1,
+        "text": "我是 6 号平民。平安夜女巫大概率用了药。1、2 号发言高度雷同，像狼队做身份，必须警惕。3 号跳猎人先保留，4、5 号发言逻辑正常。建议好人重点盘查 1、2 号，我会跟随大家找漏洞。"
+      }
+    },
+    {
+      "event_id": 8,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 7,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 1
+        },
+        "action_id": 1,
+        "text": "我是 7 号平民。平安夜女巫大概率用救药。1、2 号发言完全雷同，极像狼队做身份，必须警惕。3 号跳猎人先保留，4、5、6 号逻辑正常。建议好人重点盘查 1、2 号，我会跟随大家找漏洞，投出首狼。"
+      }
+    },
+    {
+      "event_id": 9,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 8,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_seer_good",
+          "target": 1
+        },
+        "action_id": 19,
+        "text": "我是 8 号预言家，首夜查验 1 号为好人。平安夜女巫大概率用了解药。目前 2 号发言与 1 号高度雷同，且 3 号跳猎人未给警徽流，嫌疑较大。请好人警惕 2、3 号，今晚我会继续验人，大家把票投给最像狼的人。"
+      }
+    },
+    {
+      "event_id": 10,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 9,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_seer_good",
+          "target": 8
+        },
+        "action_id": 26,
+        "text": "我是 9 号平民。平安夜女巫大概率用了药。8 号跳预言家报 1 金水，我暂时认下。但 2 号发言与 1 号高度雷同，像狼队做身份，嫌疑很大。3 号跳猎人没警徽流也存疑。建议今天重点盘查 2 号和 3 号，我会跟随大家投票。"
+      }
+    },
+    {
+      "event_id": 11,
+      "day": 1,
+      "phase": "day_vote",
+      "event_type": "vote_result",
+      "actor": null,
+      "payload": {
+        "vote_round": 1,
+        "votes": {
+          "1": 2,
+          "2": 3,
+          "3": 2,
+          "4": 2,
+          "5": 2,
+          "6": 2,
+          "7": 2,
+          "8": 2,
+          "9": 2
+        },
+        "exiled": 2,
+        "tied": []
+      }
+    },
+    {
+      "event_id": 12,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "night_announcement",
+      "actor": null,
+      "payload": {
+        "dead_players": [
+          8
+        ],
+        "text": "昨晚死亡玩家：8号"
+      }
+    },
+    {
+      "event_id": 13,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 3,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_hunter_pressure",
+          "target": 1
+        },
+        "action_id": 55,
+        "text": "3 号猎人，昨晚 8 号倒牌，我暂不开枪。1、2 号发言高度雷同，明显是狼队做身份，必须警惕。4 到 7 号逻辑正常，建议好人今天重点盘查 1、2 号，把票集中投给最像狼的人，找出真凶。"
+      }
+    },
+    {
+      "event_id": 14,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 4,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 1
+        },
+        "action_id": 1,
+        "text": "我是 4 号平民。昨晚 8 号倒牌，女巫大概率没毒人。3 号猎人发言尚可，但 1、2 号首夜发言高度雷同，狼队做身份嫌疑极大。建议今天重点盘查 1、2 号，好人请集中票型，务必把狼投出去！"
+      }
+    },
+    {
+      "event_id": 15,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 5,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 1
+        },
+        "action_id": 1,
+        "text": "我是 5 号平民。昨晚 8 号倒牌，女巫大概率没毒人。1、2 号发言高度雷同，狼队做身份嫌疑极大。3 号猎人逻辑正常，4 号发言也没问题。建议好人今天集中票型投出 1 或 2 号，尽快找出真凶！"
+      }
+    },
+    {
+      "event_id": 16,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 6,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 1
+        },
+        "action_id": 1,
+        "text": "我是 6 号平民。昨晚 8 号倒牌，女巫大概率没毒人。1、2 号发言高度雷同，狼队做身份嫌疑极大。3 号猎人逻辑正常，4、5 号也没问题。建议好人今天集中票型投出 1 或 2 号，尽快找出真凶！"
+      }
+    },
+    {
+      "event_id": 17,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 7,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 1
+        },
+        "action_id": 1,
+        "text": "我是 7 号平民。昨晚 8 号倒牌，女巫大概率没毒人。1、2 号发言高度雷同，狼队做身份嫌疑极大。3 号猎人逻辑正常，4、5、6 号也没问题。建议好人今天集中票型投出 1 或 2 号，尽快找出真凶！"
+      }
+    },
+    {
+      "event_id": 18,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 9,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 1
+        },
+        "action_id": 1,
+        "text": "我是 9 号平民。昨晚 8 号倒牌，女巫大概率没毒人。1、2 号发言高度雷同，狼队做身份嫌疑极大。3 号猎人逻辑正常，4 到 7 号也没问题。建议好人今天集中票型投出 1 或 2 号，尽快找出真凶！"
+      }
+    },
+    {
+      "event_id": 19,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 1,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是 1 号平民。昨晚 8 号倒牌，女巫大概率没毒人。大家一致怀疑我和 2 号发言雷同，但我只是正常表水。既然众口一词，我暂不辩解，建议好人先盘查 2 号，若他无法自证清白，今天全票出 2 号。"
+      }
+    },
+    {
+      "event_id": 20,
+      "day": 2,
+      "phase": "day_vote",
+      "event_type": "vote_result",
+      "actor": null,
+      "payload": {
+        "vote_round": 1,
+        "votes": {
+          "1": 5,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 3,
+          "9": 1
+        },
+        "exiled": 1,
+        "tied": []
+      }
+    },
+    {
+      "event_id": 21,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "night_announcement",
+      "actor": null,
+      "payload": {
+        "dead_players": [
+          7
+        ],
+        "text": "昨晚死亡玩家：7号"
+      }
+    },
+    {
+      "event_id": 22,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 3,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_hunter_pressure",
+          "target": 9
+        },
+        "action_id": 63,
+        "text": "3 号猎人，昨晚 7 号倒牌，我暂不开枪。1、2 已出，狼队必在剩余四人中。4、5、6、9 发言逻辑一致且正常，暂时认好人。请 9 号及存疑玩家仔细盘查，若有人划水或逻辑矛盾，我今晚必开枪带走！"
+      }
+    },
+    {
+      "event_id": 23,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 4,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 9
+        },
+        "action_id": 9,
+        "text": "我是 4 号平民。昨晚 7 号倒牌，狼队必在剩余四人中。3 号猎人暂不开枪我认下。9 号全程划水，发言毫无信息量，不像好人。建议今天重点盘查 9 号，若他无法自证清白，请全票出他！"
+      }
+    },
+    {
+      "event_id": 24,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 5,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 9
+        },
+        "action_id": 9,
+        "text": "我是 5 号平民。昨晚 7 号倒牌，狼队必在剩余四人中。3 号猎人暂不开枪我认下。4 号发言有逻辑，9 号全程划水确实像狼。建议今天全票出 9 号，尽快找出真凶！"
+      }
+    },
+    {
+      "event_id": 25,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 6,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 9
+        },
+        "action_id": 9,
+        "text": "我是 6 号平民。昨晚 7 号倒牌，狼队必在剩余四人中。3 号猎人暂不开枪我认下。9 号全程划水毫无信息量，像极了狼队友在保身份。建议今天全票出 9 号，尽快找出真凶！"
+      }
+    },
+    {
+      "event_id": 26,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 9,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 4
+        },
+        "action_id": 4,
+        "text": "我是 9 号平民。昨晚 7 号倒牌，3 号猎人暂不开枪我认下。4、5、6 号发言高度雷同，明显是狼队抱团冲票打我。我全程逻辑清晰，绝非划水。请好人警惕这三人，今天必须全票出 4 号！"
+      }
+    },
+    {
+      "event_id": 27,
+      "day": 3,
+      "phase": "day_vote",
+      "event_type": "vote_result",
+      "actor": null,
+      "payload": {
+        "vote_round": 1,
+        "votes": {
+          "3": 9,
+          "4": 9,
+          "5": 9,
+          "6": 9,
+          "9": 4
+        },
+        "exiled": 9,
+        "tied": []
+      }
+    },
+    {
+      "event_id": 28,
+      "day": 3,
+      "phase": "game_over",
+      "event_type": "game_end",
+      "actor": null,
+      "payload": {
+        "winner": "werewolf",
+        "reason": "all_villagers_eliminated"
+      }
+    }
+  ]
+}

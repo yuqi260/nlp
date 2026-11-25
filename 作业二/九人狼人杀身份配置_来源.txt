@@ -1,0 +1,8 @@
+角色配置：按用户指定的9人配置绘制。
+技能参考：https://www.langrensha.net/strategy/2021050801.html
+图标：Lucide（ISC License），https://lucide.dev/license
+预言家：eye；女巫：flask-conical；猎人：crosshair；平民：user-round。
+狼人图标：Wolf Head by Lorc，Game-icons.net，CC BY 3.0。
+https://game-icons.net/1x1/lorc/wolf-head.html
+https://creativecommons.org/licenses/by/3.0/
+所有图标经统一配色与尺寸调整。图为SVG排版绘制，未使用AI生成图片。

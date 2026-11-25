@@ -1,0 +1,536 @@
+{
+  "protocol": "single_seat_1v8",
+  "system": "Ours_DualSystem",
+  "target_seat": 8,
+  "target_role": "hunter",
+  "game_idx": 0,
+  "seed": 9200,
+  "main_model": "qwen3.5-27b",
+  "opp_model": "qwen3.5-27b",
+  "side": "1v8_hunter",
+  "elapsed_sec": 145.72,
+  "eval_won": false,
+  "target_survived": true,
+  "winner": "werewolf",
+  "win_reason": "all_villagers_eliminated",
+  "total_days": 3,
+  "target_vote_total": 4,
+  "target_vote_ok": 0,
+  "target_guardrail": {
+    "passed": 3,
+    "retried": 0,
+    "fallback": 0
+  },
+  "parser_stats": {
+    "regex_hits": 14,
+    "llm_calls": 7,
+    "llm_fallbacks": 3
+  },
+  "usage_main": {
+    "calls": 7,
+    "retries": 0,
+    "failures": 0,
+    "prompt_tokens": 8929,
+    "completion_tokens": 551,
+    "total_tokens": 9480,
+    "total_latency_sec": 22.768,
+    "estimated_cost_rmb": 0.008,
+    "model_names_seen": [
+      "qwen3.5-27b"
+    ]
+  },
+  "usage_opp": {
+    "calls": 61,
+    "retries": 0,
+    "failures": 0,
+    "prompt_tokens": 53166,
+    "completion_tokens": 2794,
+    "total_tokens": 55960,
+    "total_latency_sec": 122.923,
+    "estimated_cost_rmb": 0.04531,
+    "model_names_seen": [
+      "qwen3.5-27b"
+    ]
+  },
+  "seat_agents": {
+    "1": "Opp_qwen3.5-27b",
+    "2": "Opp_qwen3.5-27b",
+    "3": "Opp_qwen3.5-27b",
+    "4": "Opp_qwen3.5-27b",
+    "5": "Opp_qwen3.5-27b",
+    "6": "Opp_qwen3.5-27b",
+    "7": "Opp_qwen3.5-27b",
+    "8": "Ours_DualSystem",
+    "9": "Opp_qwen3.5-27b"
+  },
+  "roles": {
+    "1": "villager",
+    "2": "villager",
+    "3": "witch",
+    "4": "villager",
+    "5": "werewolf",
+    "6": "werewolf",
+    "7": "werewolf",
+    "8": "hunter",
+    "9": "seer"
+  },
+  "death_causes": {
+    "1": "vote_exile",
+    "2": "wolf_kill",
+    "3": "vote_exile",
+    "4": "vote_exile",
+    "9": "wolf_kill"
+  },
+  "public_events": [
+    {
+      "event_id": 1,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "night_announcement",
+      "actor": null,
+      "payload": {
+        "dead_players": [],
+        "text": "今天是平安夜"
+      }
+    },
+    {
+      "event_id": 2,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 1,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是 1 号平民，今天平安夜说明女巫大概率没开药或狼人自刀。目前信息太少，我先听大家发言，重点观察谁在乱带节奏或强行拉票，暂时不站边，等更多信息再投票。"
+      }
+    },
+    {
+      "event_id": 3,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 2,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是 2 号平民，首夜平安说明女巫大概率没开药。1 号发言尚可，暂不站边。今天信息有限，我会重点听后续发言，警惕有人强行带节奏或编造身份，大家理性盘逻辑，一起找狼。"
+      }
+    },
+    {
+      "event_id": 4,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 3,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是 3 号女巫，昨晚解药已用救下自刀狼，毒药在手。平安夜是狼队自刀做身份，1、2 号发言像民。今天先过，重点听后面谁跳预言家或乱带节奏，我会谨慎使用毒药。"
+      }
+    },
+    {
+      "event_id": 5,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 4,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是 4 号平民。3 号跳女巫说自刀，逻辑上平安夜确实像狼队自刀做身份，但首跳女巫风险极大，需警惕悍跳。1、2 号发言正常暂认民。今天重点听预言家查验，若无好人跳预，我暂时不站边，谨慎投票。"
+      }
+    },
+    {
+      "event_id": 6,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 5,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 3
+        },
+        "action_id": 3,
+        "text": "我是 5 号平民。3 号首跳女巫报自刀，逻辑虽通但风险太大，需警惕悍跳。1、2、4 号发言尚可暂认民。今天重点听预言家查验，若无真预，我倾向于先出 3 号验明正身，大家理性盘逻辑。"
+      }
+    },
+    {
+      "event_id": 7,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 6,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 3
+        },
+        "action_id": 3,
+        "text": "我是 6 号平民。3 号首跳女巫报自刀太激进，风险极大，疑似悍跳做身份。5 号跟风推 3 号逻辑单一，像狼踩狼做高身份。今天先听预言家查验，若无真预，我倾向于出 3 号验明正身，大家理性盘逻辑。"
+      }
+    },
+    {
+      "event_id": 8,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 7,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "7 号平民，首夜平安大概率女巫没开药。3 号跳女太激进，5、6 号跟风踩人逻辑单一，像狼队做身份。我暂不站边，重点听预言家查验，若无真预再投票，大家理性盘逻辑。"
+      }
+    },
+    {
+      "event_id": 9,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 8,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 3
+        },
+        "action_id": 3,
+        "text": "我是 8 号，首夜平安大概率女巫没开药。3 号首跳女巫报自刀太激进，风险极大，疑似悍跳做身份。5、6 号跟风踩人逻辑单一，像狼队配合。今天先听预言家查验，若无真预，我倾向于出 3 号验明正身，大家理性盘逻辑。"
+      }
+    },
+    {
+      "event_id": 10,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 9,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_seer_wolf",
+          "target": 8
+        },
+        "action_id": 35,
+        "text": "我是 9 号预言家，首夜查验 2 号是好人。3 号悍跳女巫报自刀太假，5、6、8 号跟风踩人明显是狼队配合做身份。今天全票出 3 号，把真女巫逼出来，好人请跟我走。"
+      }
+    },
+    {
+      "event_id": 11,
+      "day": 1,
+      "phase": "day_vote",
+      "event_type": "vote_result",
+      "actor": null,
+      "payload": {
+        "vote_round": 1,
+        "votes": {
+          "1": 3,
+          "2": 3,
+          "3": 9,
+          "4": 3,
+          "5": 3,
+          "6": 3,
+          "7": 3,
+          "8": 3,
+          "9": 3
+        },
+        "exiled": 3,
+        "tied": []
+      }
+    },
+    {
+      "event_id": 12,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "night_announcement",
+      "actor": null,
+      "payload": {
+        "dead_players": [
+          9
+        ],
+        "text": "昨晚死亡玩家：9号"
+      }
+    },
+    {
+      "event_id": 13,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 2,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 8
+        },
+        "action_id": 8,
+        "text": "我是 2 号平民。昨晚 9 号预言家查我金水，这身份铁好人。3 号悍跳女巫逻辑硬伤，5、6、8 号跟风踩人形迹可疑。今天必须出 3 号，把真女巫逼出来，大家跟我走！"
+      }
+    },
+    {
+      "event_id": 14,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 4,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 8
+        },
+        "action_id": 8,
+        "text": "我是 4 号平民。昨晚 9 号预言家倒牌，2 号拿到金水身份坐实。3 号悍跳女巫逻辑漏洞百出，5、6、8 号盲目跟风踩人形迹可疑。今天必须全票出 3 号，把真女巫逼出来，好人请跟我走！"
+      }
+    },
+    {
+      "event_id": 15,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 5,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是 5 号平民。9 号预言家已死，2 号金水坐实。3 号悍跳女巫逻辑硬伤，必须出。但我对 6、8 号跟风踩人行为存疑，像狼队做身份。今天先出 3 号，后续重点盘 6、8 号，好人请警惕！"
+      }
+    },
+    {
+      "event_id": 16,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 6,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 5
+        },
+        "action_id": 5,
+        "text": "我是 6 号平民。昨晚 9 号预言家倒牌，2 号金水坐实。3 号悍跳女巫逻辑硬伤必须出。5 号刚才踩我像狼踩狼做身份，但我暂不站边，今天全票出 3 号验明正身，好人请跟我走！"
+      }
+    },
+    {
+      "event_id": 17,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 7,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 8
+        },
+        "action_id": 8,
+        "text": "7 号平民，昨晚 9 号倒牌，2 号金水坐实。3 号悍跳女巫逻辑硬伤必须出。5、6、8 号跟风踩人形迹可疑，像狼队配合做身份。今天全票出 3 号，后续重点盘这几个人，好人请跟我走！"
+      }
+    },
+    {
+      "event_id": 18,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 8,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是 8 号，昨晚平安夜后 9 号倒牌，2 号金水坐实。3 号悍跳女巫必出，但 1、4、7 全程划水且逻辑跟风，形迹可疑。我虽不跳神职，但作为猎人已握枪在手，若有人乱咬或抗推好人，我必开枪带走！今天先出 3 号，后续重点盘 1、4、7。"
+      }
+    },
+    {
+      "event_id": 19,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 1,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 8
+        },
+        "action_id": 8,
+        "text": "我是 1 号平民。昨晚 9 号预言家倒牌，2 号金水坐实。3 号悍跳女巫逻辑硬伤必须出。8 号跳猎太激进，像狼做身份。今天全票出 3 号，后续重点盘 5、6、8 号，好人请跟我走！"
+      }
+    },
+    {
+      "event_id": 20,
+      "day": 2,
+      "phase": "day_vote",
+      "event_type": "vote_result",
+      "actor": null,
+      "payload": {
+        "vote_round": 1,
+        "votes": {
+          "1": 2,
+          "2": null,
+          "4": 7,
+          "5": 4,
+          "6": 1,
+          "7": 7,
+          "8": 1
+        },
+        "exiled": null,
+        "tied": [
+          1,
+          7
+        ]
+      }
+    },
+    {
+      "event_id": 21,
+      "day": 2,
+      "phase": "day_vote",
+      "event_type": "vote_result",
+      "actor": null,
+      "payload": {
+        "vote_round": 2,
+        "votes": {
+          "1": 7,
+          "2": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1
+        },
+        "exiled": 1,
+        "tied": []
+      }
+    },
+    {
+      "event_id": 22,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "night_announcement",
+      "actor": null,
+      "payload": {
+        "dead_players": [
+          2
+        ],
+        "text": "昨晚死亡玩家：2号"
+      }
+    },
+    {
+      "event_id": 23,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 4,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 8
+        },
+        "action_id": 8,
+        "text": "我是 4 号平民。昨晚 2 号金水倒牌，狼队开始乱杀。3 号悍跳女巫已出局，现在场上只剩五人。8 号昨天跳猎太凶，像狼做身份；5、6 号跟风踩人逻辑单一。今天请重点盘 5、6、8 号，好人别被带偏！"
+      }
+    },
+    {
+      "event_id": 24,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 5,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 4
+        },
+        "action_id": 4,
+        "text": "我是 5 号平民。昨晚 2 号金水倒牌，狼队开始乱杀。4 号今天把矛头全指向我、6 号和 8 号，逻辑太像悍跳狼在找抗推位。我全程跟好人视角，今天必须出 4 号，别被他的节奏带偏！"
+      }
+    },
+    {
+      "event_id": 25,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 6,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 4
+        },
+        "action_id": 4,
+        "text": "我是 6 号好人。昨晚 2 号金水倒牌，狼队乱杀无疑。4 号今天无差别踩人，明显在找抗推位做身份；5 号站边正确，逻辑清晰。8 号跳猎太激进存疑。今天必须全票出 4 号，别被带偏节奏！"
+      }
+    },
+    {
+      "event_id": 26,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 7,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 4
+        },
+        "action_id": 4,
+        "text": "我是 7 号好人。昨晚 2 号金水倒牌，狼队乱杀无疑。4 号今天无差别踩人，明显在找抗推位做身份；5、6 号站边正确，逻辑清晰。8 号跳猎太激进存疑。今天必须全票出 4 号，别被带偏节奏！"
+      }
+    },
+    {
+      "event_id": 27,
+      "day": 3,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 8,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_hunter_pressure",
+          "target": 4
+        },
+        "action_id": 58,
+        "text": "我是 8 号猎人。昨晚 2 号金水倒牌，狼队急红了眼。4 号无差别踩人找抗推位，典型悍跳狼行径！5、6、7 号站边正确。今天必须全票出 4 号，若他敢乱咬或抗推好人，我开枪带走他，好人请跟我走！"
+      }
+    },
+    {
+      "event_id": 28,
+      "day": 3,
+      "phase": "day_vote",
+      "event_type": "vote_result",
+      "actor": null,
+      "payload": {
+        "vote_round": 1,
+        "votes": {
+          "4": 5,
+          "5": 4,
+          "6": 4,
+          "7": 4,
+          "8": 4
+        },
+        "exiled": 4,
+        "tied": []
+      }
+    },
+    {
+      "event_id": 29,
+      "day": 3,
+      "phase": "game_over",
+      "event_type": "game_end",
+      "actor": null,
+      "payload": {
+        "winner": "werewolf",
+        "reason": "all_villagers_eliminated"
+      }
+    }
+  ]
+}

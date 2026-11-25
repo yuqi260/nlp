@@ -1,0 +1,10 @@
+角色配置：按用户指定的9人配置绘制。
+角色立绘来源：网易《狼人杀-官方正版》官方网站 https://langrensha.com/
+官网角色数据：https://langrensha.res.netease.com/pc/gw/20190509150909/js/kapaiData_02806e2.js
+预言家：https://langrensha.res.netease.com/pc/gw/20190509150909/data/kapai_peo/yyj.png
+女巫：https://langrensha.res.netease.com/pc/gw/20190509150909/data/kapai_peo/nw.png
+猎人：https://langrensha.res.netease.com/pc/gw/20190509150909/data/kapai_peo/lr.png
+平民：https://langrensha.res.netease.com/pc/gw/20190509150909/data/kapai_peo/pm.png
+狼人：https://langrensha.res.netease.com/pc/gw/20190509150909/data/kapai_peo/langr.png
+规则参考：https://langrensha.com/wanfa/guize/2017/10/18/26899_719311.html
+角色素材版权归网易及原权利人所有，用于本次课程汇报说明。仅移除空白透明边界并按比例缩放，未使用AI重绘。

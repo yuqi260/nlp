@@ -1,0 +1,22 @@
+{
+  "ruleset_id": "nine_seer_witch_hunter_standard_v1",
+  "language": "zh",
+  "player_count": 9,
+  "role_counts": {
+    "seer": 1,
+    "witch": 1,
+    "hunter": 1,
+    "werewolf": 3,
+    "villager": 3
+  },
+  "end_rule": "side_kill",
+  "has_sheriff": false,
+  "allow_werewolf_self_kill": true,
+  "witch_self_save_policy": "night1_only",
+  "witch_allow_both_same_night": false,
+  "hunter_can_shoot_when_poisoned": false,
+  "reveal_hunter_on_shoot": true,
+  "allow_abstain_vote": true,
+  "max_revotes_per_day": 1,
+  "max_days": 10
+}

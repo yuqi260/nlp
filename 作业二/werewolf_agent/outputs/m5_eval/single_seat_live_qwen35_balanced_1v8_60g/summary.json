@@ -1,0 +1,86 @@
+{
+  "systems": {
+    "B0_PureLLM": {
+      "total_games": 30,
+      "overall_win_rate": 0.2667,
+      "camp_balanced_win_rate": 0.5417,
+      "good_roles_win_rate": 0.0833,
+      "wolf_role_win_rate": 1.0,
+      "per_role": {
+        "seer": {
+          "games": 6,
+          "win_rate": 0.0
+        },
+        "witch": {
+          "games": 6,
+          "win_rate": 0.0
+        },
+        "hunter": {
+          "games": 6,
+          "win_rate": 0.3333
+        },
+        "werewolf": {
+          "games": 6,
+          "win_rate": 1.0
+        },
+        "villager": {
+          "games": 6,
+          "win_rate": 0.0
+        }
+      },
+      "target_vote_acc": 0.8,
+      "target_survival_rate": 0.2333,
+      "guardrail_pass_rate": 0.9811,
+      "total_tokens": 1619139,
+      "estimated_cost_rmb": 1.3223,
+      "avg_cost_per_game_rmb": 0.0441
+    },
+    "Ours_DualSystem_v2": {
+      "total_games": 30,
+      "overall_win_rate": 0.4,
+      "camp_balanced_win_rate": 0.5,
+      "good_roles_win_rate": 0.3333,
+      "wolf_role_win_rate": 0.6667,
+      "per_role": {
+        "seer": {
+          "games": 6,
+          "win_rate": 0.3333
+        },
+        "witch": {
+          "games": 6,
+          "win_rate": 0.3333
+        },
+        "hunter": {
+          "games": 6,
+          "win_rate": 0.3333
+        },
+        "werewolf": {
+          "games": 6,
+          "win_rate": 0.6667
+        },
+        "villager": {
+          "games": 6,
+          "win_rate": 0.3333
+        }
+      },
+      "target_vote_acc": 0.6512,
+      "target_survival_rate": 0.1333,
+      "guardrail_pass_rate": 1.0,
+      "total_tokens": 1574739,
+      "estimated_cost_rmb": 1.2906,
+      "avg_cost_per_game_rmb": 0.043
+    }
+  },
+  "grand_total_games": 60,
+  "grand_total_tokens": 3193878,
+  "grand_total_cost_rmb": 2.6129,
+  "symbolic_1v8": null,
+  "config": {
+    "mode": "live",
+    "model": "qwen3.5-27b",
+    "games_per_role": 6,
+    "seed": 20000,
+    "elapsed_sec": 786.7,
+    "errors": []
+  }
+}

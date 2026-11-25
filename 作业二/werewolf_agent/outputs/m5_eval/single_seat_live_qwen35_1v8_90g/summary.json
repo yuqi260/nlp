@@ -1,0 +1,175 @@
+{
+  "systems": {
+    "B0_PureLLM": {
+      "total_games": 30,
+      "overall_win_rate": 0.2333,
+      "good_roles_win_rate": 0.0417,
+      "wolf_role_win_rate": 1.0,
+      "per_role": {
+        "seer": {
+          "games": 6,
+          "win_rate": 0.0
+        },
+        "witch": {
+          "games": 6,
+          "win_rate": 0.1667
+        },
+        "hunter": {
+          "games": 6,
+          "win_rate": 0.0
+        },
+        "werewolf": {
+          "games": 6,
+          "win_rate": 1.0
+        },
+        "villager": {
+          "games": 6,
+          "win_rate": 0.0
+        }
+      },
+      "target_vote_acc": 0.6286,
+      "target_survival_rate": 0.3,
+      "guardrail_pass_rate": 1.0,
+      "total_tokens": 1400004,
+      "estimated_cost_rmb": 1.1567,
+      "avg_cost_per_game_rmb": 0.0386
+    },
+    "Ours_Decoupled": {
+      "total_games": 30,
+      "overall_win_rate": 0.1667,
+      "good_roles_win_rate": 0.0,
+      "wolf_role_win_rate": 0.8333,
+      "per_role": {
+        "seer": {
+          "games": 6,
+          "win_rate": 0.0
+        },
+        "witch": {
+          "games": 6,
+          "win_rate": 0.0
+        },
+        "hunter": {
+          "games": 6,
+          "win_rate": 0.0
+        },
+        "werewolf": {
+          "games": 6,
+          "win_rate": 0.8333
+        },
+        "villager": {
+          "games": 6,
+          "win_rate": 0.0
+        }
+      },
+      "target_vote_acc": 0.5439,
+      "target_survival_rate": 0.1333,
+      "guardrail_pass_rate": 1.0,
+      "total_tokens": 1430462,
+      "estimated_cost_rmb": 1.1829,
+      "avg_cost_per_game_rmb": 0.0394
+    },
+    "Ours_DualSystem": {
+      "total_games": 30,
+      "overall_win_rate": 0.2333,
+      "good_roles_win_rate": 0.0833,
+      "wolf_role_win_rate": 0.8333,
+      "per_role": {
+        "seer": {
+          "games": 6,
+          "win_rate": 0.1667
+        },
+        "witch": {
+          "games": 6,
+          "win_rate": 0.0
+        },
+        "hunter": {
+          "games": 6,
+          "win_rate": 0.0
+        },
+        "werewolf": {
+          "games": 6,
+          "win_rate": 0.8333
+        },
+        "villager": {
+          "games": 6,
+          "win_rate": 0.1667
+        }
+      },
+      "target_vote_acc": 0.619,
+      "target_survival_rate": 0.2333,
+      "guardrail_pass_rate": 1.0,
+      "total_tokens": 1488712,
+      "estimated_cost_rmb": 1.232,
+      "avg_cost_per_game_rmb": 0.0411
+    }
+  },
+  "grand_total_games": 90,
+  "grand_total_tokens": 4319178,
+  "grand_total_cost_rmb": 3.5716,
+  "symbolic_1v8": {
+    "Random": {
+      "games_per_role": 200,
+      "overall_win_rate": 0.179,
+      "good_roles_avg_win_rate": 0.075,
+      "per_role_win_rate": {
+        "seer": 0.03,
+        "witch": 0.075,
+        "hunter": 0.09,
+        "werewolf": 0.595,
+        "villager": 0.105
+      },
+      "target_vote_acc": 0.4171,
+      "target_survival_rate": 0.045
+    },
+    "Rule": {
+      "games_per_role": 200,
+      "overall_win_rate": 0.316,
+      "good_roles_avg_win_rate": 0.1762,
+      "per_role_win_rate": {
+        "seer": 0.165,
+        "witch": 0.18,
+        "hunter": 0.155,
+        "werewolf": 0.875,
+        "villager": 0.205
+      },
+      "target_vote_acc": 0.6762,
+      "target_survival_rate": 0.298
+    },
+    "Belief+BC": {
+      "games_per_role": 200,
+      "overall_win_rate": 0.244,
+      "good_roles_avg_win_rate": 0.1288,
+      "per_role_win_rate": {
+        "seer": 0.13,
+        "witch": 0.09,
+        "hunter": 0.17,
+        "werewolf": 0.705,
+        "villager": 0.125
+      },
+      "target_vote_acc": 0.6037,
+      "target_survival_rate": 0.116
+    },
+    "Belief+BC+RL": {
+      "games_per_role": 200,
+      "overall_win_rate": 0.321,
+      "good_roles_avg_win_rate": 0.1875,
+      "per_role_win_rate": {
+        "seer": 0.14,
+        "witch": 0.205,
+        "hunter": 0.25,
+        "werewolf": 0.855,
+        "villager": 0.155
+      },
+      "target_vote_acc": 0.7104,
+      "target_survival_rate": 0.228
+    }
+  },
+  "config": {
+    "mode": "live",
+    "model": "qwen3.5-27b",
+    "games_per_role": 6,
+    "seed": 9000,
+    "elapsed_sec": 1421.21,
+    "errors": []
+  }
+}

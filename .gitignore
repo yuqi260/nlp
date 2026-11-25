@@ -1,0 +1,20 @@
+# User-requested exclusion
+作业一/
+
+# Secrets & local credentials (NEVER commit)
+.env
+**/.env
+*.key
+*.pem
+
+# Python & Node caches
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+**/node_modules/
+
+# OS / temporary artifacts
+.DS_Store
+Thumbs.db
+~$*.docx
+~$*.pptx

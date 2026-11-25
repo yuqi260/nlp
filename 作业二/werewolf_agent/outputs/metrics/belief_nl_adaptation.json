@@ -1,0 +1,30 @@
+{
+  "elapsed_sec": 15.43,
+  "train_samples": {
+    "makto_snapshots": 1224,
+    "nl_snapshots": 3220
+  },
+  "heldout_nl_snapshots": 738,
+  "old_makto_belief_on_heldout_nl": {
+    "num_unknown_seats": 5328,
+    "unknown_acc": 0.5009,
+    "macro_f1": 0.502,
+    "wolf_f1": 0.4502,
+    "nll": 1.4668
+  },
+  "new_adapted_belief_on_heldout_nl": {
+    "num_unknown_seats": 5328,
+    "unknown_acc": 0.6569,
+    "macro_f1": 0.674,
+    "wolf_f1": 0.5226,
+    "nll": 0.7961
+  },
+  "new_adapted_belief_on_makto_test": {
+    "num_unknown_seats": 1197,
+    "unknown_acc": 0.619,
+    "macro_f1": 0.5932,
+    "wolf_f1": 0.4492,
+    "nll": 0.9697
+  },
+  "saved_model": "C:\\Users\\USER\\Desktop\\nlp\\作业二\\werewolf_agent\\outputs\\models\\belief_mlp_nl.npz"
+}

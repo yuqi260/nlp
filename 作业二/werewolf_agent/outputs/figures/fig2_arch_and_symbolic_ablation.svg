@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380"><rect width="100%" height="100%" fill="#ffffff"/><style>text{font-family:'Times New Roman', 'SimSun', 'Songti SC', 'STSong', Georgia, serif;fill:#1a1a1a;}.spine{stroke:#2B2B2B;stroke-width:1.15;fill:none;}.tick{stroke:#2B2B2B;stroke-width:1.0;}.refline{stroke:#6E737B;stroke-width:1.15;stroke-dasharray:5.5 4;}.panel-lbl{font-size:15px;font-weight:700;}.panel-ttl{font-size:14.5px;font-weight:400;}.ax-lbl{font-size:13px;}.tk-lbl{font-size:12px;}.leg-lbl{font-size:12px;}.val{font-size:10.5px;font-weight:400;}.val-b{font-size:10.5px;font-weight:700;}</style><text x="62" y="25"><tspan class="panel-lbl">(a)</tspan><tspan class="panel-ttl"> 符号环境 300 局架构与方法消融（独立测试种子 50000/60000，对阵规则对手）</tspan></text>
+<rect x="609.3" y="54" width="118.6" height="264" fill="#E4EEF8"/>
+<rect x="72" y="35" width="12" height="9" fill="#D98A4E"/>
+<text x="89" y="44" class="leg-lbl">好人胜率（对规则狼）</text>
+<rect x="257" y="35" width="12" height="9" fill="#7F3310"/>
+<text x="274" y="44" class="leg-lbl">狼人胜率（对规则好人）</text>
+<rect x="442" y="35" width="12" height="9" fill="#0B4F9C"/>
+<text x="459" y="44" class="leg-lbl">综合胜率（双阵营均值）</text>
+<line x1="62" y1="54" x2="62" y2="318" class="spine"/>
+<line x1="62" y1="318" x2="736" y2="318" class="spine"/>
+<line x1="57" y1="318.0" x2="62" y2="318.0" class="tick"/>
+<text x="53" y="322.0" text-anchor="end" class="tk-lbl">0%</text>
+<line x1="57" y1="265.2" x2="62" y2="265.2" class="tick"/>
+<text x="53" y="269.2" text-anchor="end" class="tk-lbl">20%</text>
+<line x1="57" y1="212.4" x2="62" y2="212.4" class="tick"/>
+<text x="53" y="216.4" text-anchor="end" class="tk-lbl">40%</text>
+<line x1="57" y1="159.6" x2="62" y2="159.6" class="tick"/>
+<text x="53" y="163.6" text-anchor="end" class="tk-lbl">60%</text>
+<line x1="57" y1="106.8" x2="62" y2="106.8" class="tick"/>
+<text x="53" y="110.8" text-anchor="end" class="tk-lbl">80%</text>
+<line x1="57" y1="54.0" x2="62" y2="54.0" class="tick"/>
+<text x="53" y="58.0" text-anchor="end" class="tk-lbl">100%</text>
+<text x="16" y="186.0" text-anchor="middle" class="ax-lbl" transform="rotate(-90 16 186.0)">胜率</text>
+<line x1="129.4" y1="318" x2="129.4" y2="322" class="tick"/>
+<rect x="86.4" y="314.5" width="26" height="3.5" fill="#D98A4E"/>
+<text x="99.4" y="309.5" text-anchor="middle" class="val">1.3%</text>
+<rect x="116.4" y="220.3" width="26" height="97.7" fill="#7F3310"/>
+<text x="129.4" y="215.3" text-anchor="middle" class="val">37.0%</text>
+<rect x="146.4" y="267.4" width="26" height="50.6" fill="#0B4F9C"/>
+<text x="159.4" y="262.4" text-anchor="middle" class="val">19.2%</text>
+<text x="129.4" y="337" text-anchor="middle" class="tk-lbl" style="">Random</text>
+<text x="129.4" y="352" text-anchor="middle" class="tk-lbl" style="">随机基线</text>
+<line x1="264.2" y1="318" x2="264.2" y2="322" class="tick"/>
+<rect x="221.2" y="274.0" width="26" height="44.0" fill="#D98A4E"/>
+<text x="234.2" y="269.0" text-anchor="middle" class="val">16.7%</text>
+<rect x="251.2" y="104.2" width="26" height="213.8" fill="#7F3310"/>
+<text x="264.2" y="99.2" text-anchor="middle" class="val">81.0%</text>
+<rect x="281.2" y="189.1" width="26" height="128.9" fill="#0B4F9C"/>
+<text x="294.2" y="184.1" text-anchor="middle" class="val">48.8%</text>
+<text x="264.2" y="337" text-anchor="middle" class="tk-lbl" style="">Rule</text>
+<text x="264.2" y="352" text-anchor="middle" class="tk-lbl" style="">启发式规则</text>
+<line x1="399.0" y1="318" x2="399.0" y2="322" class="tick"/>
+<rect x="356.0" y="291.6" width="26" height="26.4" fill="#D98A4E"/>
+<text x="369.0" y="286.6" text-anchor="middle" class="val">10.0%</text>
+<rect x="386.0" y="214.2" width="26" height="103.8" fill="#7F3310"/>
+<text x="399.0" y="209.2" text-anchor="middle" class="val">39.3%</text>
+<rect x="416.0" y="252.9" width="26" height="65.1" fill="#0B4F9C"/>
+<text x="429.0" y="247.9" text-anchor="middle" class="val">24.7%</text>
+<text x="399.0" y="337" text-anchor="middle" class="tk-lbl" style="">Flat MLP</text>
+<text x="399.0" y="352" text-anchor="middle" class="tk-lbl" style="">BC+RL</text>
+<line x1="533.8" y1="318" x2="533.8" y2="322" class="tick"/>
+<rect x="490.8" y="302.2" width="26" height="15.8" fill="#D98A4E"/>
+<text x="503.8" y="297.2" text-anchor="middle" class="val">6.0%</text>
+<rect x="520.8" y="147.3" width="26" height="170.7" fill="#7F3310"/>
+<text x="533.8" y="142.3" text-anchor="middle" class="val">64.7%</text>
+<rect x="550.8" y="224.7" width="26" height="93.3" fill="#0B4F9C"/>
+<text x="563.8" y="219.7" text-anchor="middle" class="val">35.3%</text>
+<text x="533.8" y="337" text-anchor="middle" class="tk-lbl" style="">Pointer</text>
+<text x="533.8" y="352" text-anchor="middle" class="tk-lbl" style="">仅离线 BC</text>
+<line x1="668.6" y1="318" x2="668.6" y2="322" class="tick"/>
+<rect x="625.6" y="200.1" width="26" height="117.9" fill="#D98A4E"/>
+<text x="638.6" y="195.1" text-anchor="middle" class="val">44.7%</text>
+<rect x="655.6" y="83.0" width="26" height="235.0" fill="#7F3310"/>
+<text x="668.6" y="78.0" text-anchor="middle" class="val">89.0%</text>
+<rect x="685.6" y="141.6" width="26" height="176.4" fill="#0B4F9C"/>
+<text x="698.6" y="136.6" text-anchor="middle" class="val-b">66.8%</text>
+<text x="668.6" y="337" text-anchor="middle" class="tk-lbl" style="font-weight:700;">Pointer</text>
+<text x="668.6" y="352" text-anchor="middle" class="tk-lbl" style="font-weight:700;">BC+RL (Ours)</text></svg>

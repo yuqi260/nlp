@@ -1,0 +1,31 @@
+{
+  "games": 134,
+  "by_split": {
+    "train": 120,
+    "test": 14
+  },
+  "structural_status": {
+    "candidate": 134
+  },
+  "events": {
+    "voted": 1566,
+    "speech": 1532,
+    "speech_summary": 1532,
+    "roles": 1206,
+    "review": 1160,
+    "cycle_round": 520,
+    "werewolf_night_discuss": 291,
+    "werewolf_kill": 291,
+    "inquired": 249,
+    "vote_start": 224,
+    "vote_results": 224,
+    "poison": 223,
+    "healed": 178,
+    "end_rule": 134,
+    "end": 134,
+    "bad_player": 81,
+    "shoot": 60
+  },
+  "exact_duplicate_files": [],
+  "scope": "target board Chinese event files; structural checks only"
+}

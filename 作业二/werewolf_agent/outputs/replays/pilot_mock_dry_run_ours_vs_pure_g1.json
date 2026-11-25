@@ -1,0 +1,225 @@
+{
+  "summary": {
+    "game_id": "nl_mock_dry_run_1",
+    "mode": "nl",
+    "ruleset_id": "nine_seer_witch_hunter_standard_v1",
+    "seed": 43,
+    "winner": "werewolf",
+    "win_reason": "all_gods_eliminated",
+    "total_days": 2,
+    "roles": {
+      "1": "werewolf",
+      "2": "witch",
+      "3": "werewolf",
+      "4": "villager",
+      "5": "villager",
+      "6": "seer",
+      "7": "werewolf",
+      "8": "villager",
+      "9": "hunter"
+    },
+    "alive_players": [
+      1,
+      3,
+      4,
+      7
+    ],
+    "death_causes": {
+      "2": "hunter_shoot",
+      "5": "wolf_kill",
+      "6": "wolf_kill",
+      "8": "witch_poison",
+      "9": "vote_exile"
+    },
+    "num_public_events": 12,
+    "num_steps": 24
+  },
+  "seat_agents": {
+    "1": "decoupled_rl_llm",
+    "2": "pure_llm",
+    "3": "decoupled_rl_llm",
+    "4": "pure_llm",
+    "5": "decoupled_rl_llm",
+    "6": "pure_llm",
+    "7": "decoupled_rl_llm",
+    "8": "pure_llm",
+    "9": "decoupled_rl_llm"
+  },
+  "public_events": [
+    {
+      "event_id": 1,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "night_announcement",
+      "actor": null,
+      "payload": {
+        "dead_players": [
+          5,
+          8
+        ],
+        "text": "昨晚死亡玩家：5号、8号"
+      }
+    },
+    {
+      "event_id": 2,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 1,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是平民，目前场上信息还不够明朗，我先表水过麦，等后面神职起跳再根据发言和票型判断。"
+      }
+    },
+    {
+      "event_id": 3,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 2,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是平民，目前场上信息还不够明朗，我先表水过麦，等后面神职起跳再根据发言和票型判断。"
+      }
+    },
+    {
+      "event_id": 4,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 3,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是平民，目前场上信息还不够明朗，我先表水过麦，等后面神职起跳再根据发言和票型判断。"
+      }
+    },
+    {
+      "event_id": 5,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 4,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是平民，目前场上信息还不够明朗，我先表水过麦，等后面神职起跳再根据发言和票型判断。"
+      }
+    },
+    {
+      "event_id": 6,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 6,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是平民，目前场上信息还不够明朗，我先表水过麦，等后面神职起跳再根据发言和票型判断。"
+      }
+    },
+    {
+      "event_id": 7,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 7,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是平民，目前场上信息还不够明朗，我先表水过麦，等后面神职起跳再根据发言和票型判断。"
+      }
+    },
+    {
+      "event_id": 8,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 9,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_hunter_pressure",
+          "target": 3
+        },
+        "action_id": 57,
+        "text": "我拍猎人身份，3号在我视角里狼面非常大，今天建议大家重点投3号，若我出局会考虑带走3号。"
+      }
+    },
+    {
+      "event_id": 9,
+      "day": 1,
+      "phase": "day_vote",
+      "event_type": "vote_result",
+      "actor": null,
+      "payload": {
+        "vote_round": 1,
+        "votes": {
+          "1": 2,
+          "2": 9,
+          "3": 9,
+          "4": 9,
+          "6": 4,
+          "7": 2,
+          "9": 3
+        },
+        "exiled": 9,
+        "tied": []
+      }
+    },
+    {
+      "event_id": 10,
+      "day": 1,
+      "phase": "hunter_resolve",
+      "event_type": "hunter_shoot",
+      "actor": 9,
+      "payload": {
+        "shooter": 9,
+        "target": 2
+      }
+    },
+    {
+      "event_id": 11,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "night_announcement",
+      "actor": null,
+      "payload": {
+        "dead_players": [
+          6
+        ],
+        "text": "昨晚死亡玩家：6号"
+      }
+    },
+    {
+      "event_id": 12,
+      "day": 2,
+      "phase": "game_over",
+      "event_type": "game_end",
+      "actor": null,
+      "payload": {
+        "winner": "werewolf",
+        "reason": "all_gods_eliminated"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "source_games": 134,
+  "candidate_games": 133,
+  "failed_games": 1,
+  "splits": {
+    "train": 107,
+    "validation": 12,
+    "test": 14
+  },
+  "snapshots": 213,
+  "snapshot_splits": {
+    "train": 170,
+    "validation": 20,
+    "test": 23
+  },
+  "public_events": 2031,
+  "labels": 1197,
+  "game_warnings": 4,
+  "exact_speech_duplicates": [],
+  "split_seed": 42,
+  "provisional": true
+}

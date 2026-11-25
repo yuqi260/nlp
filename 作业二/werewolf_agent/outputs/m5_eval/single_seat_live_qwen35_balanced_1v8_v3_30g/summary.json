@@ -1,0 +1,52 @@
+{
+  "systems": {
+    "Ours_DualSystem_v3": {
+      "total_games": 30,
+      "overall_win_rate": 0.1333,
+      "deck_weighted_win_rate": 0.1852,
+      "camp_balanced_win_rate": 0.2708,
+      "good_roles_win_rate": 0.0417,
+      "wolf_role_win_rate": 0.5,
+      "per_role": {
+        "seer": {
+          "games": 6,
+          "win_rate": 0.1667
+        },
+        "witch": {
+          "games": 6,
+          "win_rate": 0.0
+        },
+        "hunter": {
+          "games": 6,
+          "win_rate": 0.0
+        },
+        "werewolf": {
+          "games": 6,
+          "win_rate": 0.5
+        },
+        "villager": {
+          "games": 6,
+          "win_rate": 0.0
+        }
+      },
+      "target_vote_acc": 0.4048,
+      "target_survival_rate": 0.0667,
+      "guardrail_pass_rate": 1.0,
+      "total_tokens": 1475002,
+      "estimated_cost_rmb": 1.2287,
+      "avg_cost_per_game_rmb": 0.041
+    }
+  },
+  "grand_total_games": 30,
+  "grand_total_tokens": 1475002,
+  "grand_total_cost_rmb": 1.2287,
+  "symbolic_1v8": null,
+  "config": {
+    "mode": "live",
+    "model": "qwen3.5-27b",
+    "games_per_role": 6,
+    "seed": 20000,
+    "elapsed_sec": 426.83,
+    "errors": []
+  }
+}

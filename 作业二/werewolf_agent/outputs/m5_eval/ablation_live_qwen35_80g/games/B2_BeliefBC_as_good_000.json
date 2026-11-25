@@ -1,0 +1,404 @@
+{
+  "system": "B2_BeliefBC",
+  "side": "as_good",
+  "game_idx": 0,
+  "seed": 5000,
+  "main_model": "qwen3.5-27b",
+  "opp_model": "qwen3.5-27b",
+  "elapsed_sec": 55.51,
+  "eval_won": false,
+  "winner": "werewolf",
+  "win_reason": "all_gods_eliminated",
+  "total_days": 2,
+  "eval_survival_rate": 0.5,
+  "process_counts": {
+    "good_vote_total": 13,
+    "good_vote_wolf": 10,
+    "wolf_vote_total": 2,
+    "wolf_vote_good": 2,
+    "witch_pois_total": 0,
+    "witch_pois_wolf": 0,
+    "hunter_shoot_total": 0,
+    "hunter_shoot_wolf": 0
+  },
+  "eval_guardrail": {
+    "passed": 9,
+    "retried": 0,
+    "fallback": 0
+  },
+  "parser_stats": {
+    "regex_hits": 10,
+    "llm_calls": 4,
+    "llm_fallbacks": 0
+  },
+  "usage_main": {
+    "calls": 13,
+    "retries": 0,
+    "failures": 0,
+    "prompt_tokens": 8253,
+    "completion_tokens": 616,
+    "total_tokens": 8869,
+    "total_latency_sec": 25.722,
+    "estimated_cost_rmb": 0.00791,
+    "model_names_seen": [
+      "qwen3.5-27b"
+    ]
+  },
+  "usage_opp": {
+    "calls": 18,
+    "retries": 0,
+    "failures": 0,
+    "prompt_tokens": 13378,
+    "completion_tokens": 832,
+    "total_tokens": 14210,
+    "total_latency_sec": 29.726,
+    "estimated_cost_rmb": 0.01202,
+    "model_names_seen": [
+      "qwen3.5-27b"
+    ]
+  },
+  "seat_agents": {
+    "1": "B2_BeliefBC",
+    "2": "B2_BeliefBC",
+    "3": "B2_BeliefBC",
+    "4": "Opp_qwen3.5-27b",
+    "5": "B2_BeliefBC",
+    "6": "B2_BeliefBC",
+    "7": "B2_BeliefBC",
+    "8": "Opp_qwen3.5-27b",
+    "9": "Opp_qwen3.5-27b"
+  },
+  "roles": {
+    "1": "witch",
+    "2": "hunter",
+    "3": "villager",
+    "4": "werewolf",
+    "5": "villager",
+    "6": "seer",
+    "7": "villager",
+    "8": "werewolf",
+    "9": "werewolf"
+  },
+  "death_causes": {
+    "1": "wolf_kill",
+    "2": "vote_exile",
+    "6": "wolf_kill",
+    "9": "vote_exile"
+  },
+  "public_events": [
+    {
+      "event_id": 1,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "night_announcement",
+      "actor": null,
+      "payload": {
+        "dead_players": [
+          1
+        ],
+        "text": "昨晚死亡玩家：1号"
+      }
+    },
+    {
+      "event_id": 2,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 2,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是2号，昨晚1号倒牌，我作为平民先表个水。目前信息太少，我不急着跳身份或乱指人。大家多听听发言逻辑，我会仔细分析每个人的表现，争取今天投出真狼，过。"
+      }
+    },
+    {
+      "event_id": 3,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 3,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是3号，一张好人牌。昨晚1号倒牌，目前信息有限，我不急着跳身份或乱指人。先听听后面玩家的发言逻辑，仔细分析谁在划水或爆点。今天我会根据大家的表现理性投票，争取把狼投出去，过。"
+      }
+    },
+    {
+      "event_id": 4,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 4,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是4号，昨晚1号倒牌，信息确实有限。2、3号发言比较正常，暂时不怀疑。我作为好人先过，建议大家多听后面几位的逻辑，尤其是8、9号之后的发言，今天先别急着乱投，过。"
+      }
+    },
+    {
+      "event_id": 5,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 5,
+      "payload": {
+        "intent": {
+          "intent_type": "stay_low",
+          "target": null
+        },
+        "action_id": 0,
+        "text": "我是5号平民，昨晚1号倒牌，目前信息确实太少。前面几位发言都挺正常，我暂时没发现明显漏洞。作为好人我先过，后面大家多听听逻辑，别急着乱投，等更多信息再决定，过。"
+      }
+    },
+    {
+      "event_id": 6,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 6,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_seer_good",
+          "target": 7
+        },
+        "action_id": 25,
+        "text": "我是6号预言家，昨晚查验7号是金水。1号倒牌信息有限，但我的视角很清晰。今天大家先别乱投，重点听2到5号的发言逻辑，谁在划水谁就是狼。我站边7号，好人跟我走，过。"
+      }
+    },
+    {
+      "event_id": 7,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 7,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 2
+        },
+        "action_id": 2,
+        "text": "我是7号平民，6号给我金水我认。2号发言逻辑清晰，不像狼，我明确站边2号。现在信息少，建议先听8、9号发言，别急着乱投，把票留给划水的人，过。"
+      }
+    },
+    {
+      "event_id": 8,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 8,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_seer_good",
+          "target": 6
+        },
+        "action_id": 24,
+        "text": "我是8号，6号跳预言家给7号金水，我暂时认下。1号倒牌信息太少，今天先别乱投。我会重点听9号发言，若逻辑有漏洞再考虑归票。好人请多观察，过。"
+      }
+    },
+    {
+      "event_id": 9,
+      "day": 1,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 9,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_seer_good",
+          "target": 6
+        },
+        "action_id": 24,
+        "text": "我是9号，6号跳预言家给7号金水，我暂且认下。昨晚1号倒牌信息太少，今天不宜乱投。我会重点观察后续发言逻辑，谁划水谁就是狼，大家理性投票，过。"
+      }
+    },
+    {
+      "event_id": 10,
+      "day": 1,
+      "phase": "day_vote",
+      "event_type": "vote_result",
+      "actor": null,
+      "payload": {
+        "vote_round": 1,
+        "votes": {
+          "2": 9,
+          "3": null,
+          "4": null,
+          "5": 8,
+          "6": 8,
+          "7": 9,
+          "8": null,
+          "9": null
+        },
+        "exiled": null,
+        "tied": [
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "event_id": 11,
+      "day": 1,
+      "phase": "day_vote",
+      "event_type": "vote_result",
+      "actor": null,
+      "payload": {
+        "vote_round": 2,
+        "votes": {
+          "2": 9,
+          "3": 9,
+          "4": null,
+          "5": 9,
+          "6": 9,
+          "7": 9,
+          "8": null,
+          "9": null
+        },
+        "exiled": 9,
+        "tied": []
+      }
+    },
+    {
+      "event_id": 12,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "night_announcement",
+      "actor": null,
+      "payload": {
+        "dead_players": [
+          6
+        ],
+        "text": "昨晚死亡玩家：6号"
+      }
+    },
+    {
+      "event_id": 13,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 2,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_hunter_pressure",
+          "target": 8
+        },
+        "action_id": 62,
+        "text": "我是2号猎人，昨晚6号倒牌信息量变大。我直接亮身份，8号昨天发言划水严重，狼面极大。今天必须把票投给8号，如果我不幸出局，我会毫不犹豫开枪带走他。好人请跟紧我的节奏，过。"
+      }
+    },
+    {
+      "event_id": 14,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 3,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 2
+        },
+        "action_id": 2,
+        "text": "我是3号平民。昨晚6号倒牌，2号突然跳猎人还要带8号，这操作太像悍跳狼想拉票了。他昨天划水今天直接冲锋，逻辑完全不通。我强烈怀疑2号是狼，建议大家今天把票集中投给2号，把他放逐出去，过。"
+      }
+    },
+    {
+      "event_id": 15,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 4,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 2
+        },
+        "action_id": 2,
+        "text": "我是4号好人。2号昨天划水今天突然跳猎还要带8号，这悍跳狼太明显了！3号分析得对，2号逻辑完全不通。昨晚6号倒牌，2号急着拉票就是心虚。今天全票出2号，别被他的枪口吓住，过。"
+      }
+    },
+    {
+      "event_id": 16,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 5,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 2
+        },
+        "action_id": 2,
+        "text": "我是5号平民。昨晚6号倒牌，2号突然跳猎人还要带8号，这操作太像悍跳狼拉票了！昨天划水今天冲锋，逻辑完全不通。我强烈怀疑2号是狼，建议大家今天把票集中投给2号，别被他的枪口吓住，过。"
+      }
+    },
+    {
+      "event_id": 17,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 7,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 2
+        },
+        "action_id": 2,
+        "text": "我是7号平民，昨晚6号倒牌，2号突然跳猎人还要带8号，这悍跳狼太明显了！昨天划水今天冲锋，逻辑完全不通。我强烈怀疑2号是狼，建议大家今天把票集中投给2号，别被他的枪口吓住，过。"
+      }
+    },
+    {
+      "event_id": 18,
+      "day": 2,
+      "phase": "day_speech",
+      "event_type": "speech",
+      "actor": 8,
+      "payload": {
+        "intent": {
+          "intent_type": "claim_villager_accuse",
+          "target": 2
+        },
+        "action_id": 2,
+        "text": "我是8号，昨晚6号倒牌信息有限。2号昨天划水今天悍跳猎人还要拉票带人，逻辑完全不通，明显是狼在冲锋。3、4、5、7号分析都对，今天全票出2号，别被他的枪口吓住，好人请跟紧节奏。"
+      }
+    },
+    {
+      "event_id": 19,
+      "day": 2,
+      "phase": "day_vote",
+      "event_type": "vote_result",
+      "actor": null,
+      "payload": {
+        "vote_round": 1,
+        "votes": {
+          "2": 8,
+          "3": 2,
+          "4": 2,
+          "5": 2,
+          "7": 2,
+          "8": 2
+        },
+        "exiled": 2,
+        "tied": []
+      }
+    },
+    {
+      "event_id": 20,
+      "day": 2,
+      "phase": "game_over",
+      "event_type": "game_end",
+      "actor": null,
+      "payload": {
+        "winner": "werewolf",
+        "reason": "all_gods_eliminated"
+      }
+    }
+  ]
+}

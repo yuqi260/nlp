@@ -1,0 +1,19 @@
+{
+  "source": "synthetic Qwen agents, one-day cap; not independent human gameplay",
+  "game_id": "game-20261119T053940Z-56a972ac",
+  "snapshots": 1,
+  "call_status": {
+    "success": 46
+  },
+  "recorded_usage": {
+    "input_tokens": 497021,
+    "output_tokens": 18508,
+    "total_tokens": 515529,
+    "requests": 70
+  },
+  "fallback_public_event_sequences": [],
+  "public_masks": {
+    "synthetic_pilot_v3:day1": []
+  },
+  "formal_evaluation": false
+}

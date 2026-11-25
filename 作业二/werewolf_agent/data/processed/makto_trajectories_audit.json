@@ -1,0 +1,49 @@
+{
+  "source_dir": "C:\\Users\\USER\\Desktop\\nlp\\作业二\\werewolf_nlp\\data\\raw\\makto_source\\raw",
+  "splits_file": "C:\\Users\\USER\\Desktop\\nlp\\作业二\\werewolf_nlp\\data\\splits\\games.jsonl",
+  "games_per_split": {
+    "test": 14,
+    "train": 107,
+    "validation": 12
+  },
+  "skipped_unmatched_games": [
+    "train_hunter_witch_seer_game_181"
+  ],
+  "reconstruct_stats": {
+    "kept_day_speech": 1523,
+    "kept_day_vote": 1552,
+    "kept_hunter_shoot": 59,
+    "kept_night_seer_check": 247,
+    "kept_night_witch_act": 261,
+    "kept_night_wolf_kill": 619
+  },
+  "samples_per_split": {
+    "train": {
+      "belief_samples": 1224,
+      "night_seer_check": 202,
+      "night_wolf_kill": 487,
+      "night_witch_act": 209,
+      "hunter_shoot": 52,
+      "day_speech": 1200,
+      "day_vote": 1224
+    },
+    "validation": {
+      "belief_samples": 163,
+      "night_seer_check": 23,
+      "night_wolf_kill": 61,
+      "night_witch_act": 23,
+      "hunter_shoot": 3,
+      "day_speech": 158,
+      "day_vote": 163
+    },
+    "test": {
+      "belief_samples": 165,
+      "night_seer_check": 22,
+      "night_wolf_kill": 71,
+      "night_witch_act": 29,
+      "hunter_shoot": 4,
+      "day_speech": 165,
+      "day_vote": 165
+    }
+  }
+}
